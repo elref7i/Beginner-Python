@@ -27,3 +27,15 @@ print(f"Outside fun1 = {V1}")
 print(f"Outside fun1 = {V2}")  #error
 '''
 
+
+            #################### ( EX.3 ) ###############
+'''
+G= 2
+def fun1 ():
+    def fun2():
+        V3 = 3
+        print(G)
+        print("V3")
+    fun2()
+# fun2() # fun2 is Local Scope
+'''
