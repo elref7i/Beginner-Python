@@ -39,3 +39,35 @@ def fun1 ():
     fun2()
 # fun2() # fun2 is Local Scope
 '''
+
+'''
+            #################### ( EX.4 ) ###############
+name = 'Ahmed'
+def fun():
+    name = "Mohmaed"
+    print(f"inside fun {name}")  #output ?
+print(f'Outside fun {name}') # output ?
+'''
+'''
+           #################### ( EX.5 ) ###############
+G= 1  #Global
+def fun():
+    global G   ###Important
+    G +=1
+    print(f"inside fun {G}")  
+print(f'Outside fun {G}')    
+'''
+#In other ways, example 5
+'''
+G= 1  #Global
+def fun():
+    print(f"inside fun {G}") # output = 1
+    return G+1 ###
+
+print(G)  # output = 1
+G= fun()
+print(f'Outside fun {G}')   #output = 2
+'''
+# Global Constant
+pi = 3.14  # no change
+
